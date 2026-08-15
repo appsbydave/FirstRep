@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>First Rep</title>
+<meta name="description" content="Couch to your first pull-up. Works offline.">
+<meta name="theme-color" content="#F1F4F9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1020" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="First Rep">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="preload" href="fonts/archivo-exp.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <div class="topbar">
+      <span class="wordmark">FIRST REP</span>
+      <span id="topright"></span>
+    </div>
+    <div class="thebar" role="presentation"></div>
+    <main class="view" id="view"></main>
+  </div>
+  <nav class="tabbar" id="tabbar" hidden>
+    <div class="tabinner">
+      <button class="tab" data-tab="today">Today</button>
+      <button class="tab" data-tab="plan">Plan</button>
+      <button class="tab" data-tab="progress">Progress</button>
+      <button class="tab" data-tab="you">You</button>
+    </div>
+  </nav>
+  <div id="overlay"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
